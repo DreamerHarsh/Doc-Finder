@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:gravity="center_horizontal"
+    android:background="#F9F9F9">
+
+    <TextView
+        android:id="@+id/symptomsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal"
+        android:text="Select Symptoms"
+        android:textColor="#00796B"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/dateTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/symptomsText"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#00796B"
+        android:elevation="3dp"
+        android:paddingVertical="12dp"
+        android:text="Select Date and Time"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/dateTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Date and Time: None"
+        android:layout_marginBottom="16dp"
+        android:textColor="#00796B"
+        android:layout_below="@id/dateTimeButton"
+        android:layout_marginTop="16dp"/>
+
+    <!-- CardView for Checkboxes inside ScrollView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:radius="8dp"
+        android:layout_below="@id/dateTimeTextView"
+        android:layout_marginTop="16dp"
+        android:layout_above="@id/searchDoctorsButton">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Checkboxes -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/symptomFever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fever" />
+
+                <CheckBox
+                    android:id="@+id/symptomCough"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cough" />
+
+                <CheckBox
+                    android:id="@+id/symptomHeadache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Headache" />
+
+                <CheckBox
+                    android:id="@+id/symptomFatigue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fatigue" />
+
+                <CheckBox
+                    android:id="@+id/symptomChestPain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chest Pain" />
+
+                <CheckBox
+                    android:id="@+id/symptomShortnessOfBreath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shortness of Breath" />
+
+                <CheckBox
+                    android:id="@+id/symptomPalpitations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heart Palpitations" />
+
+                <CheckBox
+                    android:id="@+id/symptomSwellingInLegs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Swelling in Legs" />
+
+                <CheckBox
+                    android:id="@+id/symptomRash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rash or Redness" />
+
+                <CheckBox
+                    android:id="@+id/symptomAcne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Acne" />
+
+                <CheckBox
+                    android:id="@+id/symptomDrySkin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dry or Itchy Skin" />
+
+                <CheckBox
+                    android:id="@+id/symptomHairLoss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hair Loss" />
+
+                <CheckBox
+                    android:id="@+id/symptomMigraines"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Migraines" />
+
+                <CheckBox
+                    android:id="@+id/symptomSeizures"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seizures" />
+
+                <CheckBox
+                    android:id="@+id/symptomNumbness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Numbness or Tingling" />
+
+                <CheckBox
+                    android:id="@+id/symptomMemoryLoss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Memory Loss" />
+
+                <CheckBox
+                    android:id="@+id/symptomFeverChild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fever" />
+
+                <CheckBox
+                    android:id="@+id/symptomEarPain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ear Pain" />
+
+                <CheckBox
+                    android:id="@+id/symptomSoreThroat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sore Throat" />
+
+                <CheckBox
+                    android:id="@+id/symptomVomiting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vomiting or Nausea" />
+
+                <CheckBox
+                    android:id="@+id/symptomAnxiety"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anxiety" />
+
+                <CheckBox
+                    android:id="@+id/symptomDepression"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Depression" />
+
+                <CheckBox
+                    android:id="@+id/symptomInsomnia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insomnia" />
+
+                <CheckBox
+                    android:id="@+id/symptomMoodSwings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mood Swings" />
+
+                <CheckBox
+                    android:id="@+id/symptomJointPain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Joint Pain" />
+
+                <CheckBox
+                    android:id="@+id/symptomBackPain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back Pain" />
+
+                <CheckBox
+                    android:id="@+id/symptomMuscleWeakness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Muscle Weakness" />
+
+                <CheckBox
+                    android:id="@+id/symptomSwellingInJoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Swelling in Joints" />
+                <!-- Add more CheckBoxes as needed -->
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Button to submit, ensure it's at the bottom -->
+    <Button
+        android:id="@+id/searchDoctorsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Doctors"
+        android:backgroundTint="#00796B"
+        android:textColor="#FFFFFF"
+        android:paddingVertical="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

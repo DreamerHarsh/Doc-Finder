@@ -1,0 +1,80 @@
+<!-- res/layout/activity_add_remarks.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Remarks"
+            android:textSize="24sp"
+            android:textColor="#00796B"
+            android:paddingBottom="8dp"
+            android:textStyle="bold"/>
+
+        <!-- Remarks Input Field -->
+        <EditText
+            android:id="@+id/remarksInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter remarks here"
+            android:gravity="top"
+            android:minLines="5"
+            android:padding="16dp"
+            android:background="@drawable/rounded_login_ui"
+            android:layout_marginBottom="16dp"
+            android:textColor="#333333"
+            android:textColorHint="#B0BEC5"
+            android:textSize="16sp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Remarks"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#4CAF50"
+            android:paddingVertical="12dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Remarks Section Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor Remarks"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#00796B"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Remarks RecyclerView with a CardView container -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/remarksRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:clipToPadding="false"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

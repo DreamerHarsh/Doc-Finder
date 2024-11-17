@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DocFinder</string>
+    <string-array name="specializations_array">
+        <item>General Practitioner</item>
+        <item>Cardiologist</item>
+        <item>Dermatologist</item>
+        <item>Neurologist</item>
+        <item>Pediatrician</item>
+        <item>Psychiatrist</item>
+        <item>Orthopedic</item>
+        <!-- Add more specializations as needed -->
+    </string-array>
+
+</resources>

@@ -1,0 +1,139 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="#F5F5F5">
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Profile Picture"
+        android:background="@drawable/circular_background"
+        android:clipToOutline="true"
+        android:elevation="2dp"
+        android:padding="4dp"/>
+
+
+    <Button
+        android:id="@+id/selectPhotoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Photo" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:hint="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:backgroundTint="#DDDDDD"/>
+
+    <EditText
+        android:id="@+id/age"
+        android:hint="Age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:backgroundTint="#DDDDDD"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:hint="Phone Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:backgroundTint="#DDDDDD"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:backgroundTint="#DDDDDD"/>
+
+    <RadioGroup
+        android:id="@+id/userTypeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioDoctor"
+            android:text="Doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="#333333" />
+
+        <RadioButton
+            android:id="@+id/radioPatient"
+            android:text="Patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="#333333" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/specialization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:backgroundTint="#DDDDDD"
+        android:hint="Specialization"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/hospitalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hospital Name"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/hospitalAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hospital Address"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/registerButton"
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#00796B"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:text="Already Registered? Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EEEEEE"
+        android:textColor="#00796B"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium" />
+</LinearLayout>

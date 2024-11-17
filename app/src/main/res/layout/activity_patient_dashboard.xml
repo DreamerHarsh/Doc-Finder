@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F9F9F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:elevation="4dp"
+        android:background="@drawable/rounded_login_ui"
+        android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/patientPhoto"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Patient Photo"
+                    android:clipToOutline="true"
+                    android:background="@drawable/rounded_login_ui" />
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp">
+
+                    <TextView
+                        android:id="@+id/patientName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patient Name: "
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#00796B"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:id="@+id/patientAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Age: "
+                        android:textSize="16sp"
+                        android:textColor="#4CAF50" />
+                </LinearLayout>
+        <ImageView
+            android:id="@+id/editProfile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:contentDescription="Edit Profile"
+            android:focusable="true"
+            android:src="@drawable/ic_edit"
+            app:tint="#00796B" />
+            </LinearLayout>
+
+            <!-- Book Appointment Button -->
+            <Button
+                android:id="@+id/selectSymptomsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#00796B"
+                android:elevation="3dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingVertical="12dp"
+                android:text="Book Appointment"
+                android:textColor="#FFFFFF" />
+
+            <!-- CardView for Book Appointment and Appointment List -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#FFFFFF"
+        android:layout_marginBottom="16dp">
+        <ListView
+            android:id="@+id/appointmentList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:padding="8dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:backgroundTint="#00796B"
+        android:textColor="#FFFFFF"
+        android:paddingVertical="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="3dp" />
+
+</LinearLayout>
